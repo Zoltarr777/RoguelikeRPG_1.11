@@ -58,6 +58,7 @@ Type: py engine.py
 * Added mind control spell
 * Added random item names
 * Added equipment drop menu
+* Added necromancy spell
 
 **Alpha 1.10 - 4/15/20**
 * Decreased dungeon descending healing amount
