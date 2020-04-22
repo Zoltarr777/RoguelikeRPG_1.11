@@ -12,6 +12,10 @@ Open Terminal
 
 Type: python3 -m pip install --user tcod
 
+Type: pip install playsound
+
+Type: pip install -U PyObjC
+
 Download all game files and save to desktop
 
 Open Terminal:
@@ -30,6 +34,8 @@ python3 engine.py
 Open command prompt:
 
 Type: py -m pip install tcod
+
+Type: py -m pip install playsound
 
 Type to open:
 
