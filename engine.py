@@ -158,8 +158,9 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
 
 		if equipment_inventory_index is not None and previous_game_state != GameStates.PLAYER_DEAD and equipment_inventory_index < len(player.equipment_inventory.items):
 			equip_item = player.equipment_inventory.items[equipment_inventory_index]
-
-			if game_state == GameStates.DROP_EQUIPMENT:
+			if game_state == GameStates.SHOW_EQUIPMENT_INVENTORY:
+				player_turn_results.extend(player.equipment_inventory.use(equip_item))
+			elif game_state == GameStates.DROP_EQUIPMENT:
 				player_turn_results.extend(player.equipment_inventory.drop_item(equip_item))
 
 		if take_stairs and game_state == GameStates.PLAYERS_TURN:
